@@ -3,14 +3,13 @@ package com.addressbook;
 import java.util.Scanner;
 
 /**
- * UC1 - Ability to add a new
+ * UC2 - Ability to edit
  *
  * Requirements:
-     *   - Contact to Address Book
-     *   - Use Console to add person details from
-     *   - AddressBookMain class
-     *   - Use Object Oriented Concepts to manage
-     *   - relationship between AddressBook and Contact
+     *   - existing contact
+     *   - person using their
+     *   - name
+     *   - Use Console to edit person details
  *
  * @author  Kalees-bridgelabz
  * @version 1.0
@@ -20,13 +19,12 @@ public class AddressbookMain {
     public static void main(String[] args) {
         System.out.println("Welcome to Addressbook");
         
-        System.out.println("\n=== UC1: Ability to add a new ===");
+        System.out.println("\n=== UC2: Ability to edit ===");
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter First Name : "); String firstName = scanner.nextLine();
-        System.out.print("Enter Last Name  : "); String lastName  = scanner.nextLine();
-        System.out.print("Enter Phone      : "); String phone     = scanner.nextLine();
-        System.out.print("Enter Email      : "); String email     = scanner.nextLine();
-        System.out.println("Created: " + firstName + " " + lastName);
+        System.out.print("Enter name to edit: ");
+        String name = scanner.nextLine();
+        // TODO: Implement edit logic
+        System.out.println("Edit operation for: " + name);
         scanner.close();
     }
 }
